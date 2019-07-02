@@ -11,8 +11,14 @@ class TelaPrincipal extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
 
-    return Layout.getContent(context, Center(
-      child: Center( child: Column(
+    final content = Center(child: Text("Home")
+    );
+
+    return Layout.getContent(context, content);
+  }
+
+} 
+/*  child: Center( child: Column(
         children: <Widget>[
           Text('Hello Mundo'),
            RaisedButton(
@@ -24,8 +30,4 @@ class TelaPrincipal extends StatelessWidget{
           )
         ],
       ), 
-     )
-    ));
-  }
-
-} 
+     ) */

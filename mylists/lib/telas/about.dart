@@ -14,7 +14,7 @@ class TelaSobre extends StatelessWidget{
     return Layout.getContent(context,
      Container(
        child: Center(
-         child: Text('Sobre MyLists'),
+         child: Text('About'),
          ),
          
        ),
