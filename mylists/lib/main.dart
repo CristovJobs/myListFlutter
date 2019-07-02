@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mylists/telas/sobre.dart';
-import 'telas/home..dart';
+import 'telas/about.dart';
+import 'telas/config.dart';
 import 'layouts/layout.dart';
+import 'telas/home..dart';
 
 void main()=>runApp(MyLists());
 
@@ -11,7 +12,8 @@ class MyLists extends StatelessWidget{
   final routes = <String, WidgetBuilder>{
 
      TelaPrincipal.tag : (context) => TelaPrincipal(),
-     TelaSobre.tag : (context) => TelaSobre()
+     TelaSobre.tag : (context) => TelaSobre(),
+     TelaConfig.tag : (context) => TelaConfig()
   };
 
   @override
@@ -22,13 +24,10 @@ class MyLists extends StatelessWidget{
       title: 'MyLists',
       theme: ThemeData(
         //A cor principal da App
-        primaryColorDark: Layout.primary(),
-       
-        //a color accent para alguns botoes padrao
+        primaryColor: Layout.primary(),
         accentColor: Layout.secondary(),
-
         textTheme: TextTheme(headline: TextStyle(fontSize: 72, fontWeight: FontWeight.bold),
-        title: TextStyle(fontSize: 36, fontWeight: FontWeight.normal, fontStyle: FontStyle.italic, color: Colors.blueGrey ),
+        title: TextStyle(fontSize: 36, fontStyle: FontStyle.italic, color: Colors.blueGrey ),
         body1: TextStyle(fontSize: 14)
         ),
       ),

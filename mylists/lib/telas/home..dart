@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:mylists/layouts/layout.dart';
-import 'package:mylists/telas/sobre.dart';
+import 'package:mylists/telas/about.dart';
 
 //Essa é a tela principal da aplicação
 class TelaPrincipal extends StatelessWidget{
